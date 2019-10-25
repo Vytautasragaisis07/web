@@ -182,13 +182,15 @@ body{
 }
 @media (min-width: 320px) and (max-width: 375px)  {
 	.portfolio {
+		max-width: 100%;
 		text-align: center;
 		background: url(portfolio.png);
 		background-size: cover;
 	}
 }
-@media (min-width: 375px) and (max-width: 600px)  {
+@media (min-width: 375px) and (max-width: 640px)  {
 	.portfolio {
+		max-width: 100%;
 		text-align: center;
 		background: url(portfolio.png);
 		background-size: cover;
@@ -205,10 +207,65 @@ body{
 .portfolio h3, p {
 	color: #616161;
 }
-.image1 h3 {
+.im img {
+	max-width: none;
+}
+.im1 img {
+	max-width: none;
+}
+.im2 img {
+	max-width: none;
+}
+.im3 img {
+	max-width: none;
+}
+.im4 img {
+	max-width: none;
+}
+.im5 img {
+	max-width: none;
+}
+@media only screen and (max-width: 640px) {
+	.im img {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.im1 img {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.im2 img {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.im3 img {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.im4 img {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.im5 img {
+		max-width: 100%;
+	}
+}
+.im1 h3 {
 	position: absolute;
 	top: 0;
 	left: 40px;
+}
+@media only screen and (max-width: 640px) {
+	.im1 h3 {
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
 }
 .overlay1
 {
@@ -216,11 +273,28 @@ body{
 	top: 0;
 	left: 0;
 }
+.im1 h3 {
+	color: #fff;
+}
+@media only screen and (max-width: 640px) {
+	.im1 h3 {
+		color: #fff;
+		position: absolute;
+		top: -40px;
+		left: 10px;
+	}
+}
 .plusicon
 {
 	position: absolute;
 	top: 120px;
 	left: 140px;
+}
+@media only screen and (max-width: 640px) {
+	.plusicon {
+		top: 35%;
+		left: 35%;
+	}
 }
 /*http://www.corelangs.com/css/box/ontop.html*/
 .portfolio .image1 h3 {
@@ -271,11 +345,36 @@ body{
 	margin-right: 90px;
 }
 /*Offices*/
-.offices {
+.offices{
 	max-width: 100%;
-	background: url(Set-top2.png);
-	background-size: cover;
+	background-image: url(Sep-top.png),
+	 		url(offices.png);
+	background-repeat: no-repeat,
+			no-repeat,
+			no-repeat;
+	background-position: top;
+}
+@media (min-width: 320px) and (max-width: 375px)  {
+	.offices {
+		text-align: center;
+		background: url(offices.png);
+		background-size: cover;
+	}
+}
+@media (min-width: 375px) and (max-width: 600px)  {
+	.offices {
+		text-align: center;
+		background: url(offices.png);
+		background-size: cover;
+	}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+	.offices {
+	max-width: 100%;
+	background: url(offices.png);
+	background-size: contain;
 	background-repeat: no-repeat;
+	}
 }
 .offices h2, p{
 	color: #fff;
