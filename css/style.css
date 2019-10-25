@@ -5,7 +5,6 @@
 /*Header*/
 body{
 	max-width: 100%;
-	background-color: #fafcfe;
 }
 /*.header {
 	max-width: 100%;
@@ -18,40 +17,20 @@ body{
 	max-width: 100%;
 	background-image: url(Sep-bot.png),
 	 		url(hero-01.png);
-	background-repeat: no-repeat,
-			no-repeat,
-			no-repeat;
-	background-position: bottom;
-}
-@media (min-width: 320px) and (max-width: 375px)  {
-	.header {
-		text-align: center;
-		background: url(hero-01.png);
-		background-size: cover;
-	}
-}
-@media (min-width: 375px) and (max-width: 600px)  {
-	.header {
-		text-align: center;
-		background: url(hero-01.png);
-		background-size: cover;
-	}
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-	.header {
-	max-width: 100%;
-	background: url(hero-01.png);
-	background-size: contain;
 	background-repeat: no-repeat;
-	}
+	background-position: bottom;
 }
 .header .container-fluid {
 	text-align: center;
-	max-width: 1200px;
 }
 /*Eilutes*/
 .header li {
 	margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+	.header li {
+		margin: 0;
+	}
 }
 .header ul {
 	display: flex;
@@ -59,18 +38,17 @@ body{
 	list-style: none;
 	float: right;
 }
-.header li a {
-	color: white;
-}
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 	.header ul {
 		flex-direction: column;
 		float: none;
 	}
-	.header li {
-		margin: 0;
-	}
-	.header a {
+}
+.header li a {
+	color: white;
+}
+@media screen and (max-width: 767px) {
+	.header li a {
 		display: block;
 	}
 }
@@ -78,7 +56,7 @@ body{
 	float: left;
 	margin-top: 25px
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 	.header .logopng {
 		float: none;
 		text-align: center;
@@ -88,7 +66,7 @@ body{
 .header .pgrlogo img {
 	padding-top: 260px;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 	.header .pgrlogo img {
 		padding-top: 15px;
 	}
@@ -97,7 +75,7 @@ body{
 	color: white;
 	padding-top: 45px;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 	.header .logotext p {
 		padding-top: 30px;
 	}
@@ -106,11 +84,6 @@ body{
 .header .button {
 	padding-top: 20px;
 }
-@media only screen and (max-width: 500px) {
-	.header .button {
-		padding: 15px 75px 10px 75px;
-	}
-}
 .header .button a {
 	background-color: rgba(255 255 255 0.5);
 	padding: 10px 35px 10px 35px;
@@ -118,12 +91,9 @@ body{
 	color: white;
 	border-radius: 3px;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 360px) {
 	.header .button a {
-		padding: 10px 10px 10px 10px;
-		border: 2px solid white;
-		color: white;
-		border-radius: 3px;
+		padding: 10px 15px 10px 15px;
 	}
 }
 .header .pgrlogo {
@@ -137,7 +107,7 @@ body{
 	padding-top: 210px;
 	padding-bottom: 52px;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 	.header .scrolldown {
 		padding-top: 35px;
 		padding-bottom: 10px;
@@ -162,7 +132,7 @@ body{
 	padding-bottom: 75px;
 	padding-top: 40px;
 }
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 528px) {
 	.servicesheader {
 		padding-top: 35px;
 		padding-bottom: 40px;
@@ -176,132 +146,22 @@ body{
 	 		url(portfolio.png);
 	background-repeat: no-repeat,
 			no-repeat,
-			no-repeat;
+			repeat;
 	background-position: top,
 			bottom;
-}
-@media (min-width: 320px) and (max-width: 375px)  {
-	.portfolio {
-		max-width: 100%;
-		text-align: center;
-		background: url(portfolio.png);
-		background-size: cover;
-	}
-}
-@media (min-width: 375px) and (max-width: 640px)  {
-	.portfolio {
-		max-width: 100%;
-		text-align: center;
-		background: url(portfolio.png);
-		background-size: cover;
-	}
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-	.portfolio {
-	max-width: 100%;
-	background: url(portfolio.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	}
 }
 .portfolio h3, p {
 	color: #616161;
 }
-.im img {
+.portfolio img {
 	max-width: none;
 }
-.im1 img {
-	max-width: none;
-}
-.im2 img {
-	max-width: none;
-}
-.im3 img {
-	max-width: none;
-}
-.im4 img {
-	max-width: none;
-}
-.im5 img {
-	max-width: none;
-}
-@media only screen and (max-width: 640px) {
-	.im img {
+@media screen and (max-width: 1024px) {
+	.portfolio img {
 		max-width: 100%;
-	}
-}
-@media only screen and (max-width: 640px) {
-	.im1 img {
-		max-width: 100%;
-	}
-}
-@media only screen and (max-width: 640px) {
-	.im2 img {
-		max-width: 100%;
-	}
-}
-@media only screen and (max-width: 640px) {
-	.im3 img {
-		max-width: 100%;
-	}
-}
-@media only screen and (max-width: 640px) {
-	.im4 img {
-		max-width: 100%;
-	}
-}
-@media only screen and (max-width: 640px) {
-	.im5 img {
-		max-width: 100%;
-	}
-}
-.im1 h3 {
-	position: absolute;
-	top: 0;
-	left: 40px;
-}
-@media only screen and (max-width: 640px) {
-	.im1 h3 {
-		position: absolute;
-		top: 0;
-		left: 20px;
-	}
-}
-.overlay1
-{
-	position: relative;
-	top: 0;
-	left: 0;
-}
-.im1 h3 {
-	color: #fff;
-}
-@media only screen and (max-width: 640px) {
-	.im1 h3 {
-		color: #fff;
-		position: absolute;
-		top: -40px;
-		left: 10px;
-	}
-}
-.plusicon
-{
-	position: absolute;
-	top: 120px;
-	left: 140px;
-}
-@media only screen and (max-width: 640px) {
-	.plusicon {
-		top: 35%;
-		left: 35%;
 	}
 }
 /*http://www.corelangs.com/css/box/ontop.html*/
-.portfolio .image1 h3 {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	color: #fff;
-}
 .portfolio .row {
 	max-width: 100%;
 	text-align: center;
@@ -340,68 +200,74 @@ body{
 	text-align: center;
 	color: #616161;
 }
-.team .team-div {
+.team-div {
+	max-width: 100%;
 	text-align: center;
 	margin-right: 90px;
+}
+@media screen and (max-width: 1340px) {
+	.team-div {
+		text-align: center;
+		margin-left: 140px;
+		margin-right: 140px;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.team-div {
+		text-align: center;
+		margin-left: 110px;
+		margin-right: 110px;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.team-div {
+		text-align: center;
+		margin-left: 75px;
+		margin-right: 75px;
+		max-width: 100%;
+	}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+	.team-div {
+		text-align: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		max-width: 100%;
+	}
+}
+.team-div h4 {
+	text-align: center;
+}
+.team-div p {
+	text-align: center;
 }
 /*Offices*/
 .offices{
 	max-width: 100%;
 	background-image: url(Sep-top.png),
+			url(Sep-bot.png),
 	 		url(offices.png);
 	background-repeat: no-repeat,
 			no-repeat,
 			no-repeat;
-	background-position: top;
-}
-@media (min-width: 320px) and (max-width: 375px)  {
-	.offices {
-		text-align: center;
-		background: url(offices.png);
-		background-size: cover;
-	}
-}
-@media (min-width: 375px) and (max-width: 600px)  {
-	.offices {
-		text-align: center;
-		background: url(offices.png);
-		background-size: cover;
-	}
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-	.offices {
-	max-width: 100%;
-	background: url(offices.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	}
+	background-position: top,
+			bottom;
 }
 .offices h2, p{
 	color: #fff;
-}
-.offices .image1 {
-	background: url(overlay1.png);
 }
 .offices .image1 h3 {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	color: #fff;
 }
-.offices .row {
-	background: url(world.png);
-	background-repeat: no-repeat;
-	text-align: center;
-	margin: 0px;
-	padding-bottom: 420px;
-}
 .officesheader {
 	text-align: center;
 	color: #fff;
-	padding-bottom: 75px;
+	padding-bottom: 475px;
 	padding-top: 265px;
-}
-.officesheader img {
-	padding-bottom: 25px;
 }
 /*Clients*/
 .clients {
@@ -429,38 +295,54 @@ body{
 	text-align: center;
 	color: #616161;
 }
+.clients-div .row {
+	display: inline-block;
+}
 .clients .clients-div {
 	text-align: center;
 	margin-right: 95px;
 }
+@media screen and (max-width: 1340px) {
+	.clients .team-div {
+		text-align: center;
+		margin-left: 0px;
+    margin-right: 95px;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.clients .clients-div {
+		text-align: center;
+		margin-left: 0px;
+    margin-right: 95px;
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.clients .clients-div {
+		text-align: center;
+		margin-left: 0px;
+    margin-right: 95px;
+		margin-bottom: 15px;
+	}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+	.clients .clients-div {
+		text-align: center;
+		margin-left: 0px;
+    margin-right: 0px;
+		margin-bottom: 15px;
+	}
+}
 .clients .line {
 	margin-bottom: 60px;
 }
-@media (min-width: 100px) and (max-width: 300px)  {
-	.arrow {
-		text-align: center;
-		width: 100px;
-		height: 20px;
-	}
+.arrow {
+	max-width: 100%;
 }
-@media (min-width: 300px) and (max-width: 375px)  {
+@media screen and (max-width: 1200px) {
 	.arrow {
-		text-align: center;
-		width: 200px;
-		height: 20px;
-	}
-}
-@media (min-width: 375px) and (max-width: 768px)  {
-	.arrow {
-		text-align: center;
-		width: 275px;
-		height: 25px;
-	}
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-	.arrow {
-		text-align: center;
-		max-width: 100%;
+		display: none;
 	}
 }
 .clients .right {
@@ -473,20 +355,18 @@ body{
 .cliets .line {
 	padding-top: 20px;
 }
-.clientstext p {
+.clientstext {
+	text-align: center;
 	padding-top: 20px;
-	font-style: bold;
-	color: #616161;
-}
-.clientstext strong{
-	color: #4287f5;
 }
 /*Contactus*/
 .contactus {
 	max-width: 100%;
-	background: url(contactus.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url(Sep-top.png),
+	 		url(contact.png);
+	background-repeat: no-repeat,
+			repeat;
+	background-position: top;
 }
 .contactus h2, p {
 	color: #fff;
