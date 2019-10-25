@@ -1,0 +1,425 @@
+/*Viskam*/
+* {
+	padding: 0;
+}
+/*Header*/
+body{
+	max-width: 100%;
+	background-color: #fafcfe;
+}
+/*.header {
+	max-width: 100%;
+	background: url(hero-01.png)
+	background-image: url(url(Sep-bot.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}*/
+.header{
+	max-width: 100%;
+	background-image: url(Sep-bot.png),
+	 		url(hero-01.png);
+	background-repeat: no-repeat,
+			no-repeat,
+			no-repeat;
+	background-position: bottom;
+}
+@media (min-width: 320px) and (max-width: 375px)  {
+	.header {
+		text-align: center;
+		background: url(hero-01.png);
+		background-size: cover;
+	}
+}
+@media (min-width: 375px) and (max-width: 600px)  {
+	.header {
+		text-align: center;
+		background: url(hero-01.png);
+		background-size: cover;
+	}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+	.header {
+	max-width: 100%;
+	background: url(hero-01.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	}
+}
+.header .container-fluid {
+	text-align: center;
+	max-width: 1200px;
+}
+/*Eilutes*/
+.header li {
+	margin-top: 20px;
+}
+.header ul {
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+	float: right;
+}
+.header li a {
+	color: white;
+}
+@media only screen and (max-width: 500px) {
+	.header ul {
+		flex-direction: column;
+		float: none;
+	}
+	.header li {
+		margin: 0;
+	}
+	.header a {
+		display: block;
+	}
+}
+.header .logopng {
+	float: left;
+	margin-top: 25px
+}
+@media only screen and (max-width: 500px) {
+	.header .logopng {
+		float: none;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}
+.header .pgrlogo img {
+	padding-top: 260px;
+}
+@media only screen and (max-width: 500px) {
+	.header .pgrlogo img {
+		padding-top: 15px;
+	}
+}
+.header .logotext p {
+	color: white;
+	padding-top: 45px;
+}
+@media only screen and (max-width: 500px) {
+	.header .logotext p {
+		padding-top: 30px;
+	}
+}
+/*Mygtukas*/
+.header .button {
+	padding-top: 20px;
+}
+@media only screen and (max-width: 500px) {
+	.header .button {
+		padding: 15px 75px 10px 75px;
+	}
+}
+.header .button a {
+	background-color: rgba(255 255 255 0.5);
+	padding: 10px 35px 10px 35px;
+	border: 2px solid white;
+	color: white;
+	border-radius: 3px;
+}
+@media only screen and (max-width: 500px) {
+	.header .button a {
+		padding: 10px 10px 10px 10px;
+		border: 2px solid white;
+		color: white;
+		border-radius: 3px;
+	}
+}
+.header .pgrlogo {
+	margin: 0;
+}
+.header .scrolldown p {
+	color: #fff;
+}
+.header .scrolldown {
+	color: white;
+	padding-top: 210px;
+	padding-bottom: 52px;
+}
+@media only screen and (max-width: 500px) {
+	.header .scrolldown {
+		padding-top: 35px;
+		padding-bottom: 10px;
+	}
+}
+/*Services*/
+.services{
+	background-color: #fafcfe;
+}
+.services h3 {
+	color: #616161;
+}
+.services p {
+	color: #616161;
+}
+.services .row {
+	text-align: center;
+}
+.servicesheader {
+	text-align: center;
+	color: #2980b9;
+	padding-bottom: 75px;
+	padding-top: 40px;
+}
+@media only screen and (max-width: 500px) {
+	.servicesheader {
+		padding-top: 35px;
+		padding-bottom: 40px;
+	}
+}
+/*Portfolio*/
+.portfolio {
+	max-width: 100%;
+	background-image: url(Sep-top.png),
+			url(Sep-bot.png),
+	 		url(portfolio.png);
+	background-repeat: no-repeat,
+			no-repeat,
+			no-repeat;
+	background-position: top,
+			bottom;
+}
+@media (min-width: 320px) and (max-width: 375px)  {
+	.portfolio {
+		text-align: center;
+		background: url(portfolio.png);
+		background-size: cover;
+	}
+}
+@media (min-width: 375px) and (max-width: 600px)  {
+	.portfolio {
+		text-align: center;
+		background: url(portfolio.png);
+		background-size: cover;
+	}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+	.portfolio {
+	max-width: 100%;
+	background: url(portfolio.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	}
+}
+.portfolio h3, p {
+	color: #616161;
+}
+.image1 h3 {
+	position: absolute;
+	top: 0;
+	left: 40px;
+}
+.overlay1
+{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.plusicon
+{
+	position: absolute;
+	top: 120px;
+	left: 140px;
+}
+/*http://www.corelangs.com/css/box/ontop.html*/
+.portfolio .image1 h3 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.portfolio .row {
+	max-width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding-bottom: 193px;
+}
+.portfolioheader {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 75px;
+	padding-top: 265px;
+}
+/*Team*/
+.team {
+	background-color: #fafcfe;
+}
+.teamheader {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 75px;
+}
+.team h2 {
+	text-align: center;
+	color: #2980b9;
+}
+.team h4 {
+	text-align: center;
+	color: #2980b9;
+}
+.teamheader p {
+	text-align: center;
+	padding-top: 25px;
+	color: #616161;
+}
+.team p {
+	text-align: center;
+	color: #616161;
+}
+.team .team-div {
+	text-align: center;
+	margin-right: 90px;
+}
+/*Offices*/
+.offices {
+	max-width: 100%;
+	background: url(Set-top2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.offices h2, p{
+	color: #fff;
+}
+.offices .image1 {
+	background: url(overlay1.png);
+}
+.offices .image1 h3 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.offices .row {
+	background: url(world.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 0px;
+	padding-bottom: 420px;
+}
+.officesheader {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 75px;
+	padding-top: 265px;
+}
+.officesheader img {
+	padding-bottom: 25px;
+}
+/*Clients*/
+.clients {
+	background-color: #fafcfe;
+}
+.clientsheader {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 55px;
+}
+.clients h2 {
+	text-align: center;
+	color: #2980b9;
+}
+.clients h4 {
+	text-align: center;
+	color: #2980b9;
+}
+.clientsheader p {
+	text-align: center;
+	padding-top: 25px;
+	color: #616161;
+}
+.clients p {
+	text-align: center;
+	color: #616161;
+}
+.clients .clients-div {
+	text-align: center;
+	margin-right: 95px;
+}
+.clients .line {
+	margin-bottom: 60px;
+}
+@media (min-width: 100px) and (max-width: 300px)  {
+	.arrow {
+		text-align: center;
+		width: 100px;
+		height: 20px;
+	}
+}
+@media (min-width: 300px) and (max-width: 375px)  {
+	.arrow {
+		text-align: center;
+		width: 200px;
+		height: 20px;
+	}
+}
+@media (min-width: 375px) and (max-width: 768px)  {
+	.arrow {
+		text-align: center;
+		width: 275px;
+		height: 25px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+	.arrow {
+		text-align: center;
+		max-width: 100%;
+	}
+}
+.clients .right {
+	padding-top: 35px;
+}
+.clients .left {
+	text-align: right;
+	padding-top: 35px;
+}
+.cliets .line {
+	padding-top: 20px;
+}
+.clientstext p {
+	padding-top: 20px;
+	font-style: bold;
+	color: #616161;
+}
+.clientstext strong{
+	color: #4287f5;
+}
+/*Contactus*/
+.contactus {
+	max-width: 100%;
+	background: url(contactus.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contactus h2, p {
+	color: #fff;
+}
+.contactus .image1 h3 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.contactusheader {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 75px;
+	padding-top: 265px;
+}
+.contactusheader img {
+	padding-bottom: 25px;
+}
+.contactus h5 {
+	color: #fff;
+}
+.contactus .row {
+	text-align: center;
+}
+.contactus img {
+	padding-bottom: 15px;
+}
+.contactus .twitter img {
+	padding-bottom: 25px;
+}
+.contactus .footer {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
